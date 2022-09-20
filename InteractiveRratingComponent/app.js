@@ -1,5 +1,5 @@
-var cardBtns = document.querySelector('.card__btns');
-var btns = document.querySelectorAll('.card__btns-btn');
+let cardBtns = document.querySelector('.card__btns');
+let btns = document.querySelectorAll('.card__btns-btn');
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', function () {
