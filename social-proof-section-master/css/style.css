@@ -7,6 +7,7 @@
   outline: none;
   list-style: none;
   box-shadow: border-box;
+  background-color: orangered;
 }
 
 :root {
@@ -29,9 +30,7 @@ body {
 
 .container {
   width: 80%;
-  background-color: red;
 }
 .container .section-product {
   width: 15rem;
-  background-color: orangered;
 }
