@@ -17,7 +17,6 @@ $mobile-size: 37.5rem;
   outline: none;
   list-style: none;
   box-shadow: border-box;
-  background-color: orangered;
 }
 
 :root {
@@ -25,9 +24,9 @@ $mobile-size: 37.5rem;
 }
 
 body {
+  font-family: 'League Spartan', sans-serif;
   max-width: $desktop-size;
   font-size: $default-font-size;
-  font-family: 'League Spartan', sans-serif;
 }
 
 .attribution {
@@ -39,9 +38,126 @@ body {
 }
 
 .container {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   width: 80%;
-
+  margin: 15rem auto;
   .section-product {
-    width: 15rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .product {
+      width: 40%;
+      &__heading {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        color: $color-primary;
+      }
+
+      &__text {
+        font-size: $default-font-size;
+        color: $color-primary-light;
+        line-height: 1.4;
+      }
+    }
+    .rating {
+      width: 55%;
+      &__text {
+        display: inline-block;
+        font-size: $default-font-size;
+        background-color: $color-primary-lighter;
+        color: $color-primary;
+
+        span {
+          img {
+            margin-right: 1rem;
+          }
+        }
+      }
+      &__text:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
   }
+
+  .section-tesimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 10rem auto;
+    .testimonial {
+      padding: 2rem;
+      position: relative;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      background-color: $color-primary;
+      border-radius: 0.34rem;
+      gap: 2rem;
+      &__info {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        gap: 2rem;
+
+        .heading-tertiary {
+          font-size: 1.4rem;
+          color: $color-white;
+          display: flex;
+          flex-direction: column;
+
+          span {
+            font-size: 1rem;
+            margin-top: 0.6rem;
+            color: $color-secondary;
+          }
+        }
+      }
+      &__img {
+        width: 4rem;
+        border-radius: 50%;
+      }
+      &__text {
+        font-size: 1.3rem;
+        text-align: left;
+        color: $color-white;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+.u-mg-left-sm {
+  margin-left: 2rem;
+}
+.u-mg-left-med {
+  margin-left: 4rem;
+}
+.u-mg-left-big {
+  margin-left: 8rem;
+}
+
+.u-pd-right-sm {
+  padding: 1rem 2rem 1rem 1rem;
+}
+.u-pd-right-med {
+  padding: 1rem 4rem 1rem 1rem;
+}
+.u-pd-right-big {
+  padding: 1rem 8rem 1rem 1rem;
+}
+
+.u-mg-bottom-med {
+  margin-bottom: 4rem;
+}
+.u-mg-bottom-big {
+  margin-bottom: 8rem;
 }

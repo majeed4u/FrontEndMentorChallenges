@@ -7,7 +7,6 @@
   outline: none;
   list-style: none;
   box-shadow: border-box;
-  background-color: orangered;
 }
 
 :root {
@@ -15,9 +14,9 @@
 }
 
 body {
+  font-family: "League Spartan", sans-serif;
   max-width: 144rem;
   font-size: 1.5rem;
-  font-family: "League Spartan", sans-serif;
 }
 
 .attribution {
@@ -30,7 +29,117 @@ body {
 
 .container {
   width: 80%;
+  margin: 15rem auto;
 }
 .container .section-product {
-  width: 15rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .section-product .product {
+  width: 40%;
+}
+.container .section-product .product__heading {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: hsl(300deg, 43%, 22%);
+}
+.container .section-product .product__text {
+  font-size: 1.5rem;
+  color: hsl(303deg, 10%, 53%);
+  line-height: 1.4;
+}
+.container .section-product .rating {
+  width: 55%;
+}
+.container .section-product .rating__text {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: hsl(300deg, 24%, 96%);
+  color: hsl(300deg, 43%, 22%);
+}
+.container .section-product .rating__text span img {
+  margin-right: 1rem;
+}
+.container .section-product .rating__text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.container .section-tesimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 80%;
+  margin: 10rem auto;
+}
+.container .section-tesimonial .testimonial {
+  padding: 2rem;
+  position: relative;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300deg, 43%, 22%);
+  border-radius: 0.34rem;
+  gap: 2rem;
+}
+.container .section-tesimonial .testimonial__info {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+}
+.container .section-tesimonial .testimonial__info .heading-tertiary {
+  font-size: 1.4rem;
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+}
+.container .section-tesimonial .testimonial__info .heading-tertiary span {
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  color: hsl(333deg, 80%, 67%);
+}
+.container .section-tesimonial .testimonial__img {
+  width: 4rem;
+  border-radius: 50%;
+}
+.container .section-tesimonial .testimonial__text {
+  font-size: 1.3rem;
+  text-align: left;
+  color: hsl(0deg, 0%, 100%);
+  line-height: 1.2;
+}
+
+.u-mg-left-sm {
+  margin-left: 2rem;
+}
+
+.u-mg-left-med {
+  margin-left: 4rem;
+}
+
+.u-mg-left-big {
+  margin-left: 8rem;
+}
+
+.u-pd-right-sm {
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.u-pd-right-med {
+  padding: 1rem 4rem 1rem 1rem;
+}
+
+.u-pd-right-big {
+  padding: 1rem 8rem 1rem 1rem;
+}
+
+.u-mg-bottom-med {
+  margin-bottom: 4rem;
+}
+
+.u-mg-bottom-big {
+  margin-bottom: 8rem;
 }
