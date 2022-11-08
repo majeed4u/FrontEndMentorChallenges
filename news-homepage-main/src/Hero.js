@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardImages } from './Data';
+import { CardImages, News } from './Data';
 import logo from './images/logo.svg';
 import desktop from './images/desktop.jpg';
 import mobile from './images/mobile.jpg';
@@ -21,7 +21,17 @@ const Hero = () => {
             <p></p>
             <button className='heading-btn'></button>
           </div>
-          <section className='news'></section>
+          <section className='news'>
+            <h2>New</h2>
+            {News.map((newsitem) => {
+              return (
+                <article className='news-article' key={newsitem.id}>
+                  <h3>{newsitem.title}</h3>
+                  <p>{newsitem.text}</p>
+                </article>
+              );
+            })}
+          </section>
         </div>
       </section>
     </main>
