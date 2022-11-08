@@ -15,6 +15,14 @@ const Hero = () => {
             <img src={mobile} alt='' />
           </picture>
         </div>
+        <div className='heading-section'>
+          <h1></h1>
+          <div className='info-section'>
+            <p></p>
+            <button className='heading-btn'></button>
+          </div>
+          <section className='news'></section>
+        </div>
       </section>
     </main>
   );
