@@ -13,9 +13,9 @@
 html {
   font-size: 15px;
 }
-img {
-  max-width: 100%;
-}
+// img {
+//   max-width: 100%;
+// }
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -124,8 +124,6 @@ body {
   article {
     padding: 2rem 0rem 2rem 1rem;
     border-bottom: 1px solid hsl(236, 13%, 42%);
-    &:last-child {
-    }
 
     h3 {
       color: hsl(36, 100%, 99%);
@@ -139,6 +137,21 @@ body {
       font-size: 1.25rem;
       inline-size: 400px;
       font-weight: 400;
+    }
+  }
+}
+.tech-news {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .article-tech-news {
+    display: flex;
+
+    .news-image {
+      img {
+        width: 165px;
+      }
     }
   }
 }
