@@ -10,7 +10,7 @@ const Hero = () => {
       <section className='main-section'>
         <div className='image-section'>
           <picture>
-            <source media='(min-width:560px )' srcset={desktop} />
+            <source media='(min-width:640px )' srcset={desktop} />
 
             <img src={mobile} alt='' />
           </picture>
