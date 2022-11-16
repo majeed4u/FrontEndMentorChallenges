@@ -9,10 +9,13 @@
   outline: none;
   text-decoration: none;
 }
-img {
-  max-width: 100%;
-  width: 100%;
+
+html {
+  font-size: 15px;
 }
+// img {
+//   max-width: 100%;
+// }
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -21,6 +24,7 @@ body {
 }
 
 .header {
+  padding: 1.25rem;
   height: 6vh;
   position: relative;
   margin: 2rem 0;
@@ -60,6 +64,7 @@ body {
     right: 0;
     top: 0;
     display: flex;
+    padding: 1.25rem;
 
     .btn {
       padding: 0.5rem;
@@ -68,6 +73,85 @@ body {
       background-color: hsl(36, 100%, 99%);
       cursor: pointer;
       z-index: 2;
+    }
+  }
+}
+
+.main-section {
+  padding: 1.25rem;
+
+  .heading-section {
+    h1 {
+      margin: 1rem 0;
+      font-size: 4rem;
+      inline-size: 500px;
+      color: hsl(240, 100%, 5%);
+    }
+    .info-section {
+      p {
+        font-size: 1.25rem;
+        line-height: 1.7;
+        color: hsl(236, 13%, 42%);
+        inline-size: 420px;
+        margin-bottom: 1rem;
+      }
+      .heading-btn {
+        margin-bottom: 1rem;
+        padding: 1rem 3rem;
+        outline: none;
+        border: none;
+        background-color: hsl(5, 85%, 63%);
+        color: hsl(36, 100%, 99%);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: hsl(240, 100%, 5%);
+        }
+      }
+    }
+  }
+}
+.news {
+  background-color: hsl(240, 100%, 5%);
+  margin-top: 2rem;
+
+  h2 {
+    color: hsl(35, 77%, 62%);
+    padding: 1rem 0rem 0rem 1rem;
+  }
+  article {
+    padding: 2rem 0rem 2rem 1rem;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+
+    h3 {
+      color: hsl(36, 100%, 99%);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+    p {
+      color: hsl(236, 13%, 42%);
+      line-height: 1.7;
+      font-size: 1.25rem;
+      inline-size: 400px;
+      font-weight: 400;
+    }
+  }
+}
+.tech-news {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .article-tech-news {
+    display: flex;
+
+    .news-image {
+      img {
+        width: 165px;
+      }
     }
   }
 }
